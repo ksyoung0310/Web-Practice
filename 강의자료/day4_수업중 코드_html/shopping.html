@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shoppindetail</title>
+    <style>
+        body, h1 {
+            margin: 0;
+        }
+        header {
+            width: 100%;
+            height: 80px;
+            background-color: ivory;
+            position: relative;
+        }
+        h1 {
+            text-align: center;
+            width: 400px;
+            height: 50px;
+            position: absolute;
+            left: calc(50% - 200px);
+            top: calc(50% - 25px);
+        }
+        nav {
+            width: 100%;
+            position: relative;
+            padding: 0 20%;
+            box-sizing: border-box;
+            margin-bottom: 50px;
+        }
+        .nav_item {
+            display: inline-block;
+            width: 16%;
+            margin-right: 4%;
+            box-sizing: border-box;
+        }
+        .nav_item:last-child {
+            margin: 0;
+            text-align: center;
+        }
+        .item_table {
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 auto;
+            width: 80%
+        }
+        .item_box {
+            height: 200px;
+            font-size: 40px;
+            position: relative;
+        }
+        .item {
+            width: 80%;
+            height: 80%;
+
+            background-color: chartreuse;
+            border-radius: 20px;
+            box-sizing: border-box;
+            position: absolute;
+            left: calc(50% - 40%);
+            top: 0;
+
+            /* padding-top: 15%; */
+        }
+        .item:hover {
+            width: 90%;
+            height: 90%;
+        }
+        .item:active {
+            background-color: brown;
+        }
+        /* .nav_item {
+            display: inline-block;
+            position: absolute;
+            width: 100px;
+            height: 50px;
+            border: 1px solid black ;
+        }
+        .nav_item:nth-of-type(1){
+            left: 15%;
+        }
+        .nav_item:nth-of-type(2) {
+            left: 30%
+        }
+        .nav_item:nth-of-type(3) {
+            left: 45%
+        }
+        .nav_item:nth-of-type(4) {
+            left: 60%
+        }
+        .nav_item:nth-of-type(5) {
+            left: 75%
+        } */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Shopping Mall</h1>
+    </header>
+    <nav>
+        <div class="nav_item">Home</div>
+        <div class="nav_item">Shops</div>
+        <div class="nav_item">Sales</div>
+        <div class="nav_item">Events</div>
+        <div class="nav_item">Contact</div>
+    </nav>
+    <main>
+        <table class="item_table">
+            <tr>
+                <td class="item_box"><div class="item">상품 1</div></td>
+                <td class="item_box"><div class="item">상품 2</div></td>
+                <td class="item_box"><div class="item">상품 3</div></td>
+            </tr>
+            <tr>
+                <td class="item_box"><div class="item">상품 4</div></td>
+                <td class="item_box"><div class="item">상품 5</div></td>
+                <td class="item_box"><div class="item">상품 6</div></td>
+            </tr>
+            <tr>
+                <td class="item_box"><div class="item">상품 7</div></td>
+                <td class="item_box"><div class="item">상품 8</div></td>
+                <td class="item_box"><div class="item">상품 9</div></td>
+            </tr>
+        </table>
+    </main>
+</body>
+</html>

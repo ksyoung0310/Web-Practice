@@ -1,0 +1,17 @@
+p {
+  background-color: yellow;
+}
+
+#green {
+  font-size: 30px;
+  color: green;
+}
+
+.red {
+  color: red;
+}
+
+.red,
+p {
+  font-size: 20px;
+}

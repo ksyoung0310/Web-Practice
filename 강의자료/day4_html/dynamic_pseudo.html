@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pseudo-class - 상태 의사 클래스</title>
+  <style>
+    a:hover {
+      color: red;
+    }
+
+    button:active {
+      background-color: yellow;
+    }
+    input {
+      width: 200px;
+      height: 50px;
+    }
+
+    input:focus {
+      outline: 2px solid blue;
+    }
+
+    a:visited {
+      color: purple;
+    }
+  </style>
+</head>
+<body>
+  <a href="#">마우스를 올리면 빨간색으로 변경</a>
+  <br>
+  <button>클릭하면 배경색이 노란색으로 변경</button>
+  <br>
+  <input type="text" placeholder="포커스를 받으면 테두리가 파란색으로 변경">
+  <br>
+  <a href="#">이미 방문한 링크는 보라색으로 표시</a>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Insert title here</title>
+    <style>
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 500px;
+            height: 300px;
+            text-align: center;
+        }
+        tr {
+            text-align: center;;
+        }
+        td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .title {
+            background-color: blue;
+            color: white;
+        }
+        .total {
+            background-color: skyblue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <tr bgcolor="blue" align ="center">
+	<p><td colspan = "3" class="title">오늘의 수입/지출</td></p>
+    </tr>
+    <tr>
+	<td>내용</td>
+	<td>수입</td>
+	<td>지출</td>
+    </tr>
+    <tr>
+	<td>월급!</td>
+	<td>1,000,000</td>
+	<td></td>
+    </tr>
+    <tr>
+	<td>점심값</td>
+	<td></td>
+	<td>5,000</td>
+    </tr>
+    <tr>
+	<td>부모님선물</td>
+	<td></td>
+	<td>30,000</td>
+    </tr>
+    <tr>
+	<td rowspan="3" class="total">총계</td>
+	<td>수입</td>
+	<td>지출</td>
+    </tr>
+    <tr>
+	<td>1,000,000</td>
+	<td>35,000</td>
+    </tr>
+    <tr>
+	<td>남은돈</td>
+	<td>965,000</td>
+    </tr>
+</table>
+</body>
+</html>

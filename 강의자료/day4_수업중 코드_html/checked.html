@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type="text"] {
+            display: block;
+            height: 30px;
+        }
+        input[type="checkbox"]:checked + label {
+            color: red;
+        }
+        input[type="text"]:enabled {
+            display: block;
+            height: 30px;
+            background-color: ivory;
+        }
+        input[type="text"]:disabled {
+            display: block;
+            background-color: black;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+        <input type="checkbox" id="checkbox1">
+        <label for="checkbox1">체크 상태</label>
+        <br>
+        <input type="text"><br>
+        <input type="text" disabled>
+</body>
+</html>

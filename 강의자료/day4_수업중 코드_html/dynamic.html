@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ._hover:hover {
+            color: red;
+        }
+        ._click:active {
+            background-color: yellow;
+        }
+        input[type="text"]:focus {
+            outline: 2px double blue;
+        }
+        a:visited {
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <p class="_hover">마우스 올리면 빨간색</p>
+    <br>
+    <button class="_click">클릭하면 배경이 노란색</button>
+    <br>
+    <input type="text" placeholder="포커스 받으면 테두리 파랑">
+    <br>
+    <a href="login.html">방문한 링크는 회색</a>
+</body>
+</html>

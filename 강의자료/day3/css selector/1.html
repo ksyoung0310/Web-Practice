@@ -1,0 +1,32 @@
+<!-- This html is for practice use inherit selector well -->
+<!-- Multiple div boxes, but Just select one to make different bg -->
+<html>
+<head>
+    <title>inherit selector</title>
+    <style type="text/css">
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .box2 {
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+        }
+        .box1 .box2 {
+            width: 50px;
+            height: 50px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+    <div class="box2"></div>
+</body>
+</html>

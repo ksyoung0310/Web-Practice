@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Custom List Style</title>
+  <style>
+    /* 기본 리스트 스타일을 제거하기 위해 리스트 스타일을 none으로 지정 */
+    .custom-list {
+      list-style: none;
+      color: red;
+    }
+
+    /* 각 항목에 커스텀 아이콘을 지정 */
+    .custom-list li::before {
+      content: "\2022"; /* 유니코드로서 원형 블릿(Bullet) 기호 */
+      margin-right: 0.5rem; /* 아이콘과 텍스트 사이의 간격 조정 */
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <ul class="custom-list">
+    <li>첫 번째 항목</li>
+    <li>두 번째 항목</li>
+    <li>세 번째 항목</li>
+  </ul>
+
+  <ol class="custom-list">
+    <li>1번 항목</li>
+    <li>2번 항목</li>
+    <li>3번 항목</li>
+  </ol>
+</body>
+</html>

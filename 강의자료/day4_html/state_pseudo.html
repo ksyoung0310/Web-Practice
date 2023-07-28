@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Combined Example</title>
+  <style>
+    /* Checked 상태 의사 클래스 예제 */
+    input[type="checkbox"]:checked + label {
+      font-weight: bold;
+      color: red;
+    }
+
+    /* Enabled 상태 의사 클래스 예제 */
+    input[type="text"]:enabled {
+      background-color: #f0f0f0;
+    }
+
+    input[type="text"]:disabled {
+      background-color: #dddddd;
+    }
+  </style>
+</head>
+<body>
+  <h2>Checked 상태 의사 클래스 예제</h2>
+  <input type="checkbox" id="checkbox1">
+  <label for="checkbox1">체크 상태에 따라 스타일이 변경됩니다.</label>
+
+  <h2>Enabled 상태 의사 클래스 예제</h2>
+  <input type="text" placeholder="활성화된 입력 필드">
+  <input type="text" placeholder="비활성화된 입력 필드" disabled>
+</body>
+</html>

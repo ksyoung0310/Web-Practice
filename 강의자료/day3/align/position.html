@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Centering with position: relative;</title>
+  <style>
+    .container {
+      position: relative;
+      width: 300px;
+      height: 150px;
+      border: 1px solid black;
+    }
+
+    .box {
+      position: relative; /* 자식 요소를 relative로 설정 */
+      top: calc(50% - 25px); /* top 50%로 설정하여 부모 요소의 세로 중앙에 위치 */
+      width: 200px;
+      height: 50px;
+      background-color: lightblue;
+    }
+/* p의 기본 style을 제거해주면 정상 작동
+    p {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    } */
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+        <p>Why not vertical aligned?</p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="box">
+        This works well!
+    </div>
+  </div>
+</body>
+</html>

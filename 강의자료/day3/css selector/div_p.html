@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Inheritance Example</title>
+  <style>
+    /* 부모 요소인 <div>에 스타일 지정 */
+    div {
+      color: blue; /* 텍스트 색상을 파란색으로 지정 */
+      font-size: 18px; /* 글꼴 크기를 18픽셀로 지정 */
+    }
+  </style>
+</head>
+<body>
+  <!-- 부모 요소에 스타일이 지정된 <div> -->
+  <div>
+    <!-- 자식 요소인 <p>에는 별도의 스타일 지정이 없으므로 부모의 스타일을 상속받음 -->
+    <p>This is a paragraph inside a div.</p>
+    <p>This is another paragraph inside the same div.</p>
+  </div>
+
+  <!-- 다른 부모 요소로 묶인 <p> 요소는 독립적인 스타일을 가짐 -->
+  <p>This is a paragraph not inside a div.</p>
+</body>
+</html>
